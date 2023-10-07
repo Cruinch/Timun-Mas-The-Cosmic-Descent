@@ -1,8 +1,32 @@
 # Timun-Mas-The-Cosmic-Descent
-Version 1.0 
+
+# Changelog:
+Version 1.0.1
+
+07/10/2023
+- Features:
+1. Game System
+   - Add Checkpoint
+      - Can Back To Last Checkpoint
+2. Player Mechanic
+   - Add Respawn
+   - Add Die
+   - Add Game Over
+
+- Update
+1. Player Mechanic
+   - Update Player Health
+
+- Bug
+1. Game System
+   - Checkpoint
+      - Jump in checkpoint can reduce lives
+
+# Changelog:
+Version 1.0.0
 
 06/10/2023
-- Changelog:
+- Features:
 1. Scene Manager
    - add Test Level
 2. Player Mechanic
