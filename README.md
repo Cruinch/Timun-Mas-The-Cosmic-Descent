@@ -1,6 +1,8 @@
 # Timun-Mas-The-Cosmic-Descent
 
 # Changelog:
+In Development 
+
 Version 1.0.1
 
 07/10/2023
@@ -35,6 +37,8 @@ Version 1.0.1
       - Jump in checkpoint can reduce lives
 
 # Changelog:
+In Development
+
 Version 1.0.0
 
 06/10/2023
