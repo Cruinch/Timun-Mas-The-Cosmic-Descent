@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - Item
   - Heal
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

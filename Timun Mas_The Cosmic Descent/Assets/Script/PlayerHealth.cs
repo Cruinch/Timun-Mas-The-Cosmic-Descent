@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Untuk mengelola scene
 using UnityEngine.UI;
@@ -8,12 +9,23 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100; // Nyawa maksimal pemain
     private int currentHealth; // Nyawa saat ini pemain
+    public int lives = 3;
+    public int currentLives;
     private Animator animator; // Animator pemain
     public float restartDelay = 2f; // Waktu jeda sebelum mengulang permainan
     public Text healthText; // Referensi ke komponen Text yang akan menampilkan nyawa
+    public Text livesText;
+
+    private Vector2 checkpoint;
+    public GameObject gameOverText; // Objek teks "Gameovertxt" dalam hierarki Unity
+
+    private PlayerControl playerControlScript; // Referensi ke komponen "PlayerControl"
 
     private void Start()
     {
+        gameOverText.SetActive(false);
+
+        currentLives = lives;
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         UpdateHealthText();
@@ -39,8 +51,22 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
 
+        if (currentLives <= 0)
+        {
+            GameOver();
+        }
+
         // Perbarui teks nyawa setiap kali nyawa berubah
         UpdateHealthText();
+    }
+
+    public void GameOver()
+    {
+        // Dapatkan referensi ke komponen "PlayerControl" pada GameObject yang sama
+        playerControlScript = GetComponent<PlayerControl>();
+        playerControlScript.enabled = false;
+        gameOverText.SetActive(true);
+        //StartCoroutine(RestartGame());
     }
 
     public void Heal()
@@ -49,16 +75,30 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthText(); 
     }
 
-    private void Die()
+    public void Die()
     {
-        // Memainkan animasi "die" jika komponen Animator tersedia
         if (animator != null)
         {
             animator.SetTrigger("Die"); // Atur parameter "Die" sesuai dengan nama trigger animasi Anda
         }
+        currentLives -= 1;
+        UpdateLivesText();
+        if (currentLives <= 0)
+        {
+            GameOver();
+        }
+        else
+        {
+            Respawn();
+        }
+    }
 
+    public void Restart()
+    {
         // Mengulang permainan/scene setelah waktu jeda (restartDelay)
         StartCoroutine(RestartGame());
+        playerControlScript = GetComponent<PlayerControl>();
+        playerControlScript.enabled = true;
     }
 
     private IEnumerator RestartGame()
@@ -76,7 +116,33 @@ public class PlayerHealth : MonoBehaviour
         // Perbarui teks nyawa dengan nilai nyawa saat ini
         if (healthText != null)
         {
-            healthText.text = "Health: " + currentHealth.ToString();
+            healthText.text = "Health: " +  currentHealth.ToString();
         }
+    }
+
+    private void UpdateLivesText()
+    {
+        // Perbarui teks nyawa dengan nilai nyawa saat ini
+        if (livesText != null)
+        {
+            livesText.text = "X " + currentLives.ToString();
+        }
+    }
+
+    // Method untuk menetapkan checkpoint pemain
+    public void SetCheckpoint(Vector2 position)
+    {
+        Debug.Log("menetapkan checkpoint");
+        checkpoint = position;
+    }
+
+    // Method untuk respawn pemain ke checkpoint
+    public void Respawn()
+    {
+        animator.SetTrigger("NewLife");
+        transform.position = checkpoint;
+        // Atur ulang nyawa atau status pemain lainnya yang perlu diatur ulang
+        currentHealth = 100;
+        UpdateHealthText();
     }
 }

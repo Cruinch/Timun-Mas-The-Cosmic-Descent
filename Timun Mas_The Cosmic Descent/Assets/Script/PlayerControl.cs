@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,15 +7,19 @@ public class PlayerControl : MonoBehaviour
 {
     public float speed = 5f; // Kecepatan karakter
     public float jumpForce = 7f; // Besar gaya lompatan
+
     public float attackRadius = 1f; // Radius serangan karakter
     public Transform attackPoint; // Titik serangan karakter
     public LayerMask enemyLayer; // Layer musuh
     public int attackDamage = 50; // Damage serangan karakter
+
     private bool isJumping = false; // Apakah karakter sedang melompat
     private bool isAttacking = false; // Apakah karakter sedang menyerang
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool isFacingRight = true; // Apakah karakter menghadap kanan
+
 
     private void Start()
     {
@@ -47,7 +52,7 @@ public class PlayerControl : MonoBehaviour
         }
 
         // Menyerang jika tombol kiri mouse ditekan
-        if (Input.GetMouseButtonDown(0) && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.K) && !isAttacking)
         {
             Attack();
         }
@@ -133,7 +138,7 @@ public class PlayerControl : MonoBehaviour
             PlayerHealth playerHealth = GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(1); // Mengurangi 1 nyawa
+                playerHealth.TakeDamage(150); // Mengurangi 1 nyawa
             }
         }
 
@@ -163,4 +168,5 @@ public class PlayerControl : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
 }
