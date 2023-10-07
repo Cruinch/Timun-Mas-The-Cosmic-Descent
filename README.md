@@ -8,10 +8,22 @@ Version 1.0.1
 1. Game System
    - Add Checkpoint
       - Can Back To Last Checkpoint
+   - Game Over
+      - Restart Level
 2. Player Mechanic
    - Add Respawn
    - Add Die
-   - Add Game Over
+3. Player Animation (Free Asset)
+   - Attack
+   - Jump
+   - Move (Left/Right)
+   - Hurt
+   - Die
+4. Enemy Animation (Free Asset)
+   - Attack
+   - Move (Left/Right)
+   - Hurt
+   - Die
 
 - Update
 1. Player Mechanic
