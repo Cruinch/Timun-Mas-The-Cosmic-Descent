@@ -35,6 +35,11 @@ Version 1.0.1
 1. Game System
    - Checkpoint
       - Jump in checkpoint can reduce lives
+2. Player Animation
+   - Hurt
+      - Inconsistent Animation Timing
+   - Die
+      - Late Animation Timing
 
 # Changelog:
 In Development
