@@ -27,11 +27,11 @@ Version 1.0.1
    - Hurt
    - Die
 
-- Update
+### Update
 1. Player Mechanic
    - Update Player Health
 
-- Bug
+### Bug
 1. Game System
    - Checkpoint
       - Jump in checkpoint can reduce lives
@@ -41,12 +41,12 @@ Version 1.0.1
    - Die
       - Late Animation Timing
 
-# Changelog:
+## Changelog:
 In Development
 Version 1.0.0
 
 06/10/2023
-- Features:
+### Features:
 1. Scene Manager
    - add Test Level
 2. Player Mechanic
