@@ -15,13 +15,13 @@ Version 1.0.1
 2. Player Mechanic
    - Add Respawn
    - Add Die
-3. Player Animation (Free Asset)
+3. Player Animation (Not Real Asset)
    - Attack
    - Jump
    - Move (Left/Right)
    - Hurt
    - Die
-4. Enemy Animation (Free Asset)
+4. Enemy Animation (Not Real Asset)
    - Attack
    - Move (Left/Right)
    - Hurt
