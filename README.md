@@ -27,11 +27,11 @@ Version 1.0.1
    - Hurt
    - Die
 
-### Update
+### Update:
 1. Player Mechanic
    - Update Player Health
 
-### Bug
+### Bug:
 1. Game System
    - Checkpoint
       - Jump in checkpoint can reduce lives
