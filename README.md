@@ -1,12 +1,12 @@
 # Timun-Mas-The-Cosmic-Descent
-
-# Changelog:
+## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
+## Changelog:
 In Development 
 
 Version 1.0.1
 
 07/10/2023
-- Features:
+### Features:
 1. Game System
    - Add Checkpoint
       - Can Back To Last Checkpoint
@@ -43,7 +43,6 @@ Version 1.0.1
 
 # Changelog:
 In Development
-
 Version 1.0.0
 
 06/10/2023
