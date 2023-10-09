@@ -1,6 +1,40 @@
 # Timun-Mas-The-Cosmic-Descent
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 ## Changelog:
+In Development
+
+Version 1.0.2
+
+09/10/2023
+### Features :
+- Scene Manager
+   - Main Menu
+      - Add Basic Main Menu
+   - Play
+      - Add Basic Level Selection
+- Item
+   - Add Timun
+   - Add Heal Item
+
+### Update :
+- Game System
+   - Game Over
+      - Update Restart Level
+    
+### Remove :
+- Button "Die" at Test Level
+
+### Bug Fix :
+- Game System
+   - Checkpoint
+      - Jump in checkpoint can reduce lives (problem with button "die")
+- Player Animation
+   - Hurt
+      - Inconsistent Animation Timing
+   - Die
+      - Late Animation Timing
+
+## Changelog:
 In Development 
 
 Version 1.0.1
