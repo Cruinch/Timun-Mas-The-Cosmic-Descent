@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour
     public LayerMask enemyLayer; // Layer musuh
     public int attackDamage = 50; // Damage serangan karakter
 
-    private bool isJumping = false; // Apakah karakter sedang melompat
+    public bool isJumping = false; // Apakah karakter sedang melompat
     private bool isAttacking = false; // Apakah karakter sedang menyerang
 
     private Rigidbody2D rb;
@@ -141,7 +141,10 @@ public class PlayerControl : MonoBehaviour
                 playerHealth.TakeDamage(150); // Mengurangi 1 nyawa
             }
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("Heal"))
         {
             PlayerHealth playerHealth = GetComponent<PlayerHealth>();

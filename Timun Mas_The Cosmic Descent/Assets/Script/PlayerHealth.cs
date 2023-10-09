@@ -21,6 +21,8 @@ public class PlayerHealth : MonoBehaviour
 
     private PlayerControl playerControlScript; // Referensi ke komponen "PlayerControl"
 
+    private Rigidbody2D playerRb;
+
     private void Start()
     {
         gameOverText.SetActive(false);
@@ -65,8 +67,10 @@ public class PlayerHealth : MonoBehaviour
         // Dapatkan referensi ke komponen "PlayerControl" pada GameObject yang sama
         playerControlScript = GetComponent<PlayerControl>();
         playerControlScript.enabled = false;
+        playerRb = GetComponent<Rigidbody2D>();
+        playerControlScript.speed = 0;
         gameOverText.SetActive(true);
-        //StartCoroutine(RestartGame());
+        
     }
 
     public void Heal()
@@ -77,12 +81,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        if (animator != null)
-        {
-            animator.SetTrigger("Die"); // Atur parameter "Die" sesuai dengan nama trigger animasi Anda
-        }
         currentLives -= 1;
+        animator.SetTrigger("Die");
         UpdateLivesText();
+        playerControlScript = GetComponent<PlayerControl>();
+        playerControlScript.speed = 0;
         if (currentLives <= 0)
         {
             GameOver();
@@ -96,16 +99,13 @@ public class PlayerHealth : MonoBehaviour
     public void Restart()
     {
         // Mengulang permainan/scene setelah waktu jeda (restartDelay)
-        StartCoroutine(RestartGame());
+        RestartGame();
         playerControlScript = GetComponent<PlayerControl>();
         playerControlScript.enabled = true;
     }
 
-    private IEnumerator RestartGame()
+    private void RestartGame()
     {
-        // Tunggu sebelum mengulang permainan/scene
-        yield return new WaitForSeconds(restartDelay);
-
         // Mengulang permainan/scene dengan memuat ulang scene saat ini
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
@@ -132,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
     // Method untuk menetapkan checkpoint pemain
     public void SetCheckpoint(Vector2 position)
     {
-        Debug.Log("menetapkan checkpoint");
+        /*Debug.Log("menetapkan checkpoint");*/
         checkpoint = position;
     }
 
@@ -143,6 +143,7 @@ public class PlayerHealth : MonoBehaviour
         transform.position = checkpoint;
         // Atur ulang nyawa atau status pemain lainnya yang perlu diatur ulang
         currentHealth = 100;
+        playerControlScript.speed = 5;
         UpdateHealthText();
     }
 }
