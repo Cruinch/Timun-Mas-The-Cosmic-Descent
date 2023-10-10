@@ -44,22 +44,22 @@ Version 1.0.1
 1. Game System
    - Add Checkpoint
       - Can Back To Last Checkpoint
-   - Game Over
+   - Add Game Over
       - Restart Level
 2. Player Mechanic
    - Add Respawn
    - Add Die
 3. Player Animation (Not Real Asset)
-   - Attack
-   - Jump
-   - Move (Left/Right)
-   - Hurt
-   - Die
+   - Add Attack
+   - Add Jump
+   - Add Move (Left/Right)
+   - Add Hurt
+   - Add Die
 4. Enemy Animation (Not Real Asset)
-   - Attack
-   - Move (Left/Right)
-   - Hurt
-   - Die
+   - Add Attack
+   - Add Move (Left/Right)
+   - Add Hurt
+   - Add Die
 
 ### Update:
 1. Player Mechanic
@@ -82,26 +82,26 @@ Version 1.0.0
 06/10/2023
 ### Features:
 1. Scene Manager
-   - add Test Level
+   - Add Test Level
 2. Player Mechanic
-   - add Attack
-   - add Jump
-   - add Move
-   - add Player Health
-   - add Action
+   - Add Attack
+   - Add Jump
+   - Add Move
+   - Add Player Health
+   - Add Action
      - Get Timun (Item)
      - Get Score
 3. Enemy Mechanic
-   - add Attack
-   - add Move
-   - add Enemy Health
+   - Add Attack
+   - Add Move
+   - Add Enemy Health
 4. Game System
-   - add Score
+   - Add Score
        - From Timun (Item)
        - Add Score
-   - add Health
+   - Add Health
        - Player Heatlh
        - Enemy Health
-   - add Trap
+   - Add Trap
        - Reduce Player Health
-   - add Camera Following
+   - Add Camera Following
