@@ -98,13 +98,13 @@ public class PlayerHealth : MonoBehaviour
 
     public void Restart()
     {
-        // Mengulang permainan/scene setelah waktu jeda (restartDelay)
+        // Mengulang permainan/scene
         RestartGame();
         playerControlScript = GetComponent<PlayerControl>();
         playerControlScript.enabled = true;
     }
 
-    private void RestartGame()
+    public void RestartGame()
     {
         // Mengulang permainan/scene dengan memuat ulang scene saat ini
         Scene currentScene = SceneManager.GetActiveScene();
