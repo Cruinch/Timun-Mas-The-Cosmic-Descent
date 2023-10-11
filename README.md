@@ -3,6 +3,18 @@
 ## Changelog:
 In Development
 
+Version 1.0.3
+
+11/10/2023
+### Features :
+- Game System
+   - Basic Pause Menu
+      - Add Restart From Pause Menu
+      - Add Freeze Game At Pause Menu
+
+## Changelog:
+In Development
+
 Version 1.0.2
 
 09/10/2023
