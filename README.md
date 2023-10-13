@@ -3,10 +3,59 @@
 ## Changelog:
 In Development
 
+Version 1.0.4
+
+13/10/2023
+### New Features :
+- Game System
+   - Add Background Sound Manager
+- Background Music
+   - Main Menu Scene
+      - Add  Basic (Temp)
+   - Level Choice Scene
+      - Add Basic (Temp)
+   - Test Level
+      - Add Basic (Temp)
+- Scene Manager
+   - Play
+      - Add Basic (Temp)
+   - Option
+      - Add Basic (Temp)
+   - Credits
+      - Add Basic (Temp)
+   - Exit
+      - Add Basic (Temp)
+- Button
+   - Main Menu
+      - Option Menu
+         - Add Sound Setting
+         - Add Mute
+   - Pause Menu
+      - Option Menu
+         - Add Sound Setting
+         - Add Mute
+- Sound Effect
+   - Player Animation Sfx
+      - Add Attack
+      - Add Jump
+      - Add Run
+      - Add Hurt
+      - Add Die
+   - Game Background
+      - Add Basic (Temp)
+   - Enemy Animation Sfx
+      - Add Attack
+      - Add Run
+      - Add Hurt
+      - Add Die
+
+## Changelog:
+In Development
+
 Version 1.0.3
 
 11/10/2023
-### Features :
+### New Features :
 - Game System
    - Basic Pause Menu
       - Add Restart From Pause Menu
@@ -18,7 +67,7 @@ In Development
 Version 1.0.2
 
 09/10/2023
-### Features :
+### New Features :
 - Scene Manager
    - Main Menu
       - Add Basic Main Menu
@@ -28,15 +77,15 @@ Version 1.0.2
    - Add Timun
    - Add Heal Item
 
-### Update :
+### New Update :
 - Game System
    - Game Over
       - Update Restart Level
     
-### Remove :
+### New Remove :
 - Button "Die" at Test Level
 
-### Bug Fix :
+### New Bug Fix :
 - Game System
    - Checkpoint
       - Jump in checkpoint can reduce lives (problem with button "die")
@@ -52,7 +101,7 @@ In Development
 Version 1.0.1
 
 07/10/2023
-### Features:
+### New Features:
 1. Game System
    - Add Checkpoint
       - Can Back To Last Checkpoint
@@ -73,11 +122,11 @@ Version 1.0.1
    - Add Hurt
    - Add Die
 
-### Update:
+### New Update:
 1. Player Mechanic
    - Update Player Health
 
-### Bug:
+### New Bug:
 1. Game System
    - Checkpoint
       - Jump in checkpoint can reduce lives
@@ -92,7 +141,7 @@ In Development
 Version 1.0.0
 
 06/10/2023
-### Features:
+### New Features:
 1. Scene Manager
    - Add Test Level
 2. Player Mechanic
