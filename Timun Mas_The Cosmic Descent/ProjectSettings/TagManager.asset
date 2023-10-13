@@ -10,6 +10,7 @@ TagManager:
   - Item
   - Heal
   - Checkpoint
+  - StartPoint
   layers:
   - Default
   - TransparentFX
