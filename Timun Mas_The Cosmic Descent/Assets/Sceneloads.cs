@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Sceneloads : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string scenename;
     void Start()
     {
-        SceneManager.LoadScene("Test Level");
+        SceneManager.LoadScene(scenename);
     }
 }

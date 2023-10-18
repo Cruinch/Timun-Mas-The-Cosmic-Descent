@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using UnityEditor.U2D.Sprites;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -152,7 +151,11 @@ public class PlayerHealth : MonoBehaviour
         transform.position = checkpoint;
         // Atur ulang nyawa atau status pemain lainnya yang perlu diatur ulang
         currentHealth = 100;
-        playerControlScript.speed = 5;
+        // Check if other objects that need resetting are not null
+        if (playerControlScript != null)
+        {
+            playerControlScript.speed = 5;
+        }
         UpdateHealthText();
     }
 }

@@ -8,46 +8,55 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject LoadingPanel;
 
-    public void GoScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
     public void LoadScene(string sceneName)
     {
-        LoadingPanel.SetActive(true);
+        //LoadingPanel.SetActive(true);
         StartCoroutine(LoadSceneAsync(sceneName));
     }
 
     IEnumerator LoadSceneAsync(string sceneName)
     {
+        if (LoadingPanel != null)
+        {
+            LoadingPanel.SetActive(true);
+        }
+
         // Tambahkan penundaan selama misalnya 2 detik sebelum memulai loading
         yield return new WaitForSeconds(2.0f);
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 
 
-        while (operation != null)
+        while (!operation.isDone)
         {
             yield return null;
         }
 
-        LoadingPanel.SetActive(true);
+        if (LoadingPanel != null)
+        {
+            LoadingPanel.SetActive(false);
+        }
+
     }
 
-/*    public void LTestLevel()
+    public void GoScene(string sceneName)
     {
-        LoadingPanel.SetActive(true);
-        // Menjalankan fungsi PlayBtn dengan penundaan 1 detik
-        Invoke("TestLevel", 3.0f);  
+        SceneManager.LoadScene(sceneName);
     }
 
-    public void LLevel3()
-    {
-        LoadingPanel.SetActive(true);
-        // Menjalankan fungsi PlayBtn dengan penundaan 1 detik
-        Invoke("Level3", 3.0f);
-    }*/
+    /*    public void LTestLevel()
+        {
+            LoadingPanel.SetActive(true);
+            // Menjalankan fungsi PlayBtn dengan penundaan 1 detik
+            Invoke("TestLevel", 3.0f);  
+        }
+
+        public void LLevel3()
+        {
+            LoadingPanel.SetActive(true);
+            // Menjalankan fungsi PlayBtn dengan penundaan 1 detik
+            Invoke("Level3", 3.0f);
+        }*/
 
 
 
