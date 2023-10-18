@@ -35,6 +35,13 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Level Choice");
     }
 
+    public void ExitGame()
+    {
+        // Menutup aplikasi atau permainan
+        Application.Quit();
+    }
+
+
     public void onOption()
     {
         optionMenuUI.SetActive(true);
