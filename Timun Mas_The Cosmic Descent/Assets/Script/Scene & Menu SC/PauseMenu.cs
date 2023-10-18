@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject optionMenuUI;
 
-    private bool isPaused = false;
+    private bool isPaused;
 
     public void Start()
     {

@@ -24,6 +24,12 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentScene.buildIndex);
     }
 
+    public void Loading()
+    {
+        // Menjalankan fungsi PlayBtn dengan penundaan 1 detik
+        Invoke("PlayBtn", 1.0f);
+    }
+
     public void PlayBtn()
     {
         SceneManager.LoadScene("Level Choice");

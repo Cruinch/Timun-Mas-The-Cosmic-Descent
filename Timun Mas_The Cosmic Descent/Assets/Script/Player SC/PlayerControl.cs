@@ -26,8 +26,6 @@ public class PlayerControl : MonoBehaviour
 
     private void Start()
     {
-        //*PlayerPrefs.DeleteAll();*//
-
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         SfxManager = GetComponent<SfxManager>();
@@ -93,10 +91,16 @@ public class PlayerControl : MonoBehaviour
         {
             // Pastikan objek yang terkena memiliki komponen yang memungkinkan karakter musuh untuk menerima damage
             EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            BossHealth bossHealth = enemy.GetComponent<BossHealth>(); 
             if (enemyHealth != null)
             {   
                 // Kurangi health musuh sesuai dengan attackDamage
                 enemyHealth.TakeDamage(attackDamage);
+            }
+            else if (bossHealth != null)
+            {
+                // Kurangi health musuh sesuai dengan attackDamage
+                bossHealth.TakeDamage(attackDamage);
             }
         }
 

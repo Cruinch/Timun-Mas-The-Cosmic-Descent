@@ -25,6 +25,9 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D playerRb;
 
     SfxManager sfxManager;
+    BackgroundMusicController backgroundMusicController;
+
+    //private static PlayerHealth instance;
 
     private void Start()
     {
@@ -36,6 +39,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthText();
         
         sfxManager = GetComponent<SfxManager>();
+        backgroundMusicController = GetComponent<BackgroundMusicController>();
     }
 
     public void TakeDamage(int damage)

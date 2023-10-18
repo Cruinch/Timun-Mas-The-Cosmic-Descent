@@ -1,43 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class AudioManager : MonoBehaviour
+public class BackgroundMusicController : MonoBehaviour
 {
     public Slider volumeSlider; // Slider untuk mengatur volume
     public Toggle muteToggle;   // Toggle untuk mute/unmute
     public AudioSource backgroundMusic; // Komponen AudioSource musik latar belakang
 
-    private bool isMuted = false; // Status mute/unmute
+    public bool isMuted = false; // Status mute/unmute
 
-    private static AudioManager instance;
-
-/*    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded; // Menambahkan listener untuk event sceneLoaded
-        }
-        else
-        {
-            // Destroy this instance if another AudioManager already exists
-            Destroy(gameObject);
-            return;
-        }
-    }*/
+    //private static BackgroundMusicController instance;
 
     private void Start()
     {
-        // Inisialisasi nilai slider dengan volume awal dari musik
-        volumeSlider.value = backgroundMusic.volume;
-
-        // Inisialisasi status mute/unmute berdasarkan volume awal
-        isMuted = (volumeSlider.value == 0);
-        muteToggle.isOn = isMuted;
+        // Cek apakah ada nilai volume tersimpan di PlayerPrefs
+        if (PlayerPrefs.HasKey("MusicVolume"))
+        {
+            // Jika ada, atur nilai slider dan volume audio sesuai dengan yang tersimpan
+            float savedVolume = PlayerPrefs.GetFloat("MusicVolume");
+            volumeSlider.value = savedVolume;
+            backgroundMusic.volume = savedVolume;
+            isMuted = (savedVolume == 0);
+            muteToggle.isOn = isMuted;
+        }
+        else
+        {
+            // Jika tidak ada nilai tersimpan, inisialisasi dengan nilai default
+            volumeSlider.value = backgroundMusic.volume;
+            isMuted = (volumeSlider.value == 0);
+            muteToggle.isOn = isMuted;
+        }
 
         // Tambahkan listener untuk slider
         volumeSlider.onValueChanged.AddListener(ChangeVolume);
@@ -55,6 +47,9 @@ public class AudioManager : MonoBehaviour
         backgroundMusic.volume = volume;
         isMuted = (volume == 0);
         muteToggle.isOn = isMuted;
+
+        // Simpan nilai volume ke PlayerPrefs
+        PlayerPrefs.SetFloat("MusicVolume", volume);
     }
 
     // Fungsi untuk mute/unmute musik
@@ -69,31 +64,8 @@ public class AudioManager : MonoBehaviour
         {
             backgroundMusic.volume = volumeSlider.value;
         }
-    }
 
-/*    // Callback yang dipanggil saat scene dimuat
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == "Test Level")
-        {
-            // Scene "Test Level" dimuat, jadi hentikan musik latar belakang
-            backgroundMusic.Stop();
-        }
-        else if (scene.name == "MainMenu")
-        {
-            // Kembali ke scene "MainMenu", jadi mulai pemutaran musik latar belakang
-            backgroundMusic.Play();
-        }
-        else if (scene.name == "Level Choice")
-        {
-            // Kembali ke scene "Level Choice", jadi mulai pemutaran musik latar belakang
-            backgroundMusic.Play();
-        }
+        // Simpan nilai volume ke PlayerPrefs saat mute/unmute
+        PlayerPrefs.SetFloat("MusicVolume", backgroundMusic.volume);
     }
-
-    // Hapus listener saat objek dihancurkan
-    private void OnDestroy()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }*/
 }
