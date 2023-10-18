@@ -1,5 +1,53 @@
 # Timun-Mas-The-Cosmic-Descent
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
+
+## Changelog:
+In Development
+
+Version 1.0.5
+
+18/10/2023
+### New Features :
+- Game System
+   - Loading Panel
+- Background Music
+   - Level 3 Boss Scene
+      - Basic (Temp)
+- Sound Effect
+   - Button Sfx
+      - Main Menu
+         - Play
+         - Option
+            - Mute
+         - Credits
+            - Back
+         - Tips
+            - Back
+         - Exit
+            - Yes
+            - No
+      - Pause Menu
+         - Resume
+         - Restart
+         - Option
+         - Level Choice
+         - Main Menu
+      - Level Choice
+         - Test Level
+         - Tutorial Level
+         - Level 1
+         - Level 2
+         - Level 3
+         - Main Menu
+### New Bug:
+- Button
+   - Play Button
+      - Cannot use the invoke function after returning from the 'Test Level' and 'Boss Level' scenes."
+- Game System
+   - Loading Function
+      - The problem occurs when I use it on the button in the 'level selection' scene, to fill the loading panel before switching to the selected level from the 'level selection' scene. Everything runs smoothly as               expected when I switch from the 'main menu' scene to the 'level selection' scene and execute the 'Invoke' and 'IEnumerator' functions. However, after I return to the 'main menu' scene and then go back to the             'level selection' scene, the Invoke and IEnumerator functions no longer work.
+
+
 ## Changelog:
 In Development
 
