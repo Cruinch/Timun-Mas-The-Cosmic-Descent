@@ -2,6 +2,31 @@
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 
 ## Changelog:
+Alpha Release
+
+Version 1.0.6
+
+18/10/2023
+### New Update And Optimization :
+- Game System
+   - Camera Following
+      - The camera has been slightly adjusted.
+- Button
+   - Level Choice
+      - Test Level
+         - The Respawn button is now functional.
+- Player Mechanic
+   - Player characters won't overlap with enemy characters.
+- Enemy Mechanic
+   - Enemy characters can no longer jump.
+- Player Animation
+   - Attack
+      - The Hit Attack is now timed correctly.
+      - Attack delay has been reduced.
+   - Hurt
+      - Player's Hurt animation now plays immediately without delay after the enemy attack animation.
+
+## Changelog:
 In Development
 
 Version 1.0.5
