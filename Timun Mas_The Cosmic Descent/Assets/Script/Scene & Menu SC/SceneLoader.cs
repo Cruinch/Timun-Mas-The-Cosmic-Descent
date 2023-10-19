@@ -8,12 +8,14 @@ public class SceneLoader : MonoBehaviour
 {
     public GameObject optionMenuUI;
     public GameObject creditUI;
+    public GameObject tipsUI;
     public GameObject exitUI;
 
     public void Start()
     {
         optionMenuUI.SetActive(false);
         creditUI.SetActive(false);
+        tipsUI.SetActive(false);
         exitUI.SetActive(false);
     }
 
@@ -60,6 +62,16 @@ public class SceneLoader : MonoBehaviour
     public void offCredit()
     {
         creditUI.SetActive(false);
+    }
+
+    public void onTips()
+    {
+        tipsUI.SetActive(true);
+    }
+
+    public void offTips()
+    {
+        tipsUI.SetActive(false);
     }
 
     public void onExit()
