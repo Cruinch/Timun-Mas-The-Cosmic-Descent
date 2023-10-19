@@ -4,6 +4,49 @@
 ## Changelog:
 Alpha Release
 
+Version 1.0.7
+
+19/10/2023
+### New Update :
+- Game System
+   - Camera Following
+      - Camera Bounds
+- Button Animation
+   - Main Menu
+      - Play Button
+         - Level Selection
+            - Test Level
+               - Restart
+               - Respawn
+               - Pause Menu
+            - Tutorial Level
+            - Level 1
+            - Level 2
+            - Level 3 Boss
+            - Main Menu
+      - Option Button
+Back
+      - Credits Button
+Back
+      - Tips Button
+Back
+      - Exit Button
+         - Yes
+         - No
+   - Pause Menu
+      - Resume
+      - Restart
+      - Option
+         - Back
+      - Main Menu
+### New Bug Fix :
+- Game System
+   - Loading Function
+      - Replace The Loading Function at the target scene
+
+## Changelog:
+Alpha Release
+
 Version 1.0.6
 
 18/10/2023
