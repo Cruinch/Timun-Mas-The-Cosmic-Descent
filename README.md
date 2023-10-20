@@ -4,7 +4,7 @@
 ## Changelog:
 Alpha Pre-Release
 
-Version 1.0.7
+Version 1.1.1
 
 19/10/2023
 ### New Update :
@@ -47,7 +47,7 @@ Back
 ## Changelog:
 Alpha Pre-Release
 
-Version 1.0.6
+Version 1.1.0
 
 18/10/2023
 ### New Update And Optimization :
