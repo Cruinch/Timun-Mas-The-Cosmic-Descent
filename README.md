@@ -4,7 +4,7 @@
 ## Changelog:
 Alpha Pre-Release
 
-Version 1.1.1
+Version 1.1.2
 
 19/10/2023
 ### New Update :
@@ -47,7 +47,7 @@ Back
 ## Changelog:
 Alpha Pre-Release
 
-Version 1.1.0
+Version 1.1.1
 
 18/10/2023
 ### New Update And Optimization :
@@ -70,9 +70,9 @@ Version 1.1.0
       - Player's Hurt animation now plays immediately without delay after the enemy attack animation.
 
 ## Changelog:
-In Development
+Alpha Pre-Release
 
-Version 1.0.5
+Version 1.1.0
 
 18/10/2023
 ### New Features :
