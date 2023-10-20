@@ -2,7 +2,7 @@
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 
 ## Changelog:
-Alpha Release
+Alpha Pre-Release
 
 Version 1.0.7
 
@@ -45,7 +45,7 @@ Back
       - Replace The Loading Function at the target scene
 
 ## Changelog:
-Alpha Release
+Alpha Pre-Release
 
 Version 1.0.6
 
