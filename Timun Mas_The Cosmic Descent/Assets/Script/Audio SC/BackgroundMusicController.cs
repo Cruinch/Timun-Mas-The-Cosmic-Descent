@@ -37,12 +37,6 @@ public class BackgroundMusicController : MonoBehaviour
         // Tambahkan listener untuk toggle
         muteToggle.onValueChanged.AddListener(ToggleMute);
 
-        // Mulai pemutaran musik latar belakang
-        Invoke("PlayBackgroundMusic", 2f); // Memanggil metode PlayBackgroundMusic setelah jeda 2 detik
-    }
-
-    void PlayBackgroundMusic()
-    {
         backgroundMusic.Play();
     }
 

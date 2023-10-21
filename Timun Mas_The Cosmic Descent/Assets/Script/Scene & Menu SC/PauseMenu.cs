@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject optionMenuUI;
+    public GameObject tipsMenuUI;
 
     private bool isPaused;
 
@@ -55,6 +56,18 @@ public class PauseMenu : MonoBehaviour
     public void offOption()
     {
         optionMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(true);
+    }
+
+    public void onTips()
+    {
+        pauseMenuUI.SetActive(false);
+        tipsMenuUI.SetActive(true);
+    }
+
+    public void offTips()
+    {
+        tipsMenuUI.SetActive(false);
         pauseMenuUI.SetActive(true);
     }
 

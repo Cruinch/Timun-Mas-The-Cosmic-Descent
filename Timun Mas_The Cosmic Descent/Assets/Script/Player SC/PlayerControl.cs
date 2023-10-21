@@ -24,6 +24,8 @@ public class PlayerControl : MonoBehaviour
 
     public SfxManager SfxManager;
 
+    public GameObject menuPanel;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -61,6 +63,15 @@ public class PlayerControl : MonoBehaviour
         {
             Attack();
         }
+
+        // Menyerang jika tombol kiri mouse ditekan
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menuPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
+
     }
 
     private void FixedUpdate()

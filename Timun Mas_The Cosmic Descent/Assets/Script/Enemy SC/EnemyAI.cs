@@ -6,6 +6,7 @@ public class EnemyAI : MonoBehaviour
 {
     public float moveSpeed = 2f; // Kecepatan pergerakan karakter musuh
     public float chaseRadius = 5f; // Jarak pemain yang akan dikejar
+
     public Transform attackPoint; // Titik serangan karakter
     public float attackRadius = 1f; // Radius serangan karakter
     public LayerMask playerLayer; // Layer karakter pemain

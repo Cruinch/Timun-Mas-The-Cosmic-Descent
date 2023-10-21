@@ -185,7 +185,8 @@ MonoBehaviour:
     m_Bits: 8
   attackDamage: 40
   isJumping: 0
-  soundManager: {fileID: 0}
+  SfxManager: {fileID: 0}
+  menuPanel: {fileID: 0}
 --- !u!95 &446906507459782084
 Animator:
   serializedVersion: 5
@@ -239,15 +240,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiosrc: {fileID: 0}
-  runS: {fileID: 0}
-  jumpS: {fileID: 0}
-  attackS: {fileID: 0}
-  hurtS: {fileID: 0}
-  dieS: {fileID: 0}
-  gameOverS: {fileID: 0}
-  itemS: {fileID: 0}
-  healS: {fileID: 0}
-  cpointS: {fileID: 0}
+  runS: {fileID: 8300000, guid: 775c1f1d8ac1ecc4f962038046a506ca, type: 3}
+  jumpS: {fileID: 8300000, guid: 3d29a692306e89a4da53efa784e2bec1, type: 3}
+  attackS: {fileID: 8300000, guid: 99397cb3a366f5145ac0b983d16eac72, type: 3}
+  hurtS: {fileID: 8300000, guid: 20c54699557891f418daffa2c96b3c41, type: 3}
+  dieS: {fileID: 8300000, guid: 20c54699557891f418daffa2c96b3c41, type: 3}
+  gameOverS: {fileID: 8300000, guid: 0fdebd15930a4da438dae1c93669df2a, type: 3}
+  itemS: {fileID: 8300000, guid: 3af777be8dfe53e48ba4742635bacfae, type: 3}
+  healS: {fileID: 8300000, guid: 7855adbf2820e914ba1e47dcf0a741bd, type: 3}
+  cpointS: {fileID: 8300000, guid: a68e9134d77e7ef4e9b9769645fbcba8, type: 3}
 --- !u!1 &6807206108924207264
 GameObject:
   m_ObjectHideFlags: 0
