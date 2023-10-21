@@ -2,9 +2,52 @@
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 
 ## Changelog:
-Alpha Release
+Alpha Pre-Release
 
-Version 1.0.6
+Version 1.1.2
+
+19/10/2023
+### New Update :
+- Game System
+   - Camera Following
+      - Camera Bounds
+- Button Animation
+   - Main Menu
+      - Play Button
+         - Level Selection
+            - Test Level
+               - Restart
+               - Respawn
+               - Pause Menu
+            - Tutorial Level
+            - Level 1
+            - Level 2
+            - Level 3 Boss
+            - Main Menu
+      - Option Button
+Back
+      - Credits Button
+Back
+      - Tips Button
+Back
+      - Exit Button
+         - Yes
+         - No
+   - Pause Menu
+      - Resume
+      - Restart
+      - Option
+         - Back
+      - Main Menu
+### New Bug Fix :
+- Game System
+   - Loading Function
+      - Replace The Loading Function at the target scene
+
+## Changelog:
+Alpha Pre-Release
+
+Version 1.1.1
 
 18/10/2023
 ### New Update And Optimization :
@@ -27,9 +70,9 @@ Version 1.0.6
       - Player's Hurt animation now plays immediately without delay after the enemy attack animation.
 
 ## Changelog:
-In Development
+Alpha Pre-Release
 
-Version 1.0.5
+Version 1.1.0
 
 18/10/2023
 ### New Features :
