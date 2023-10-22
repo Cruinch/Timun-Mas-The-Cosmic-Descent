@@ -1,4 +1,5 @@
 # Timun-Mas-The-Cosmic-Descent
+This is a game project for our final assignment with my team, B Eleven Studios.
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 
 ## Changelog:
