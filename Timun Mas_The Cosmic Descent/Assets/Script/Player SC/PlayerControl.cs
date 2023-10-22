@@ -184,10 +184,10 @@ public class PlayerControl : MonoBehaviour
             // Mengambil komponen ScoreManager
             ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
 
-            // Menambahkan 10 poin ke skor
+            // Menambahkan 50 poin ke skor
             if (scoreManager != null)
             {
-                scoreManager.AddScore(10);
+                scoreManager.AddScore(50);
             }
 
             SfxManager.ItemSound();
@@ -199,6 +199,16 @@ public class PlayerControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Checkpoint"))
         {
             SfxManager.CPointSound();
+        }
+
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            // Panggil fungsi ShowWinPanel pada WinPanelManager
+            WinPanelManager winPanelManager = FindObjectOfType<WinPanelManager>();
+            if (winPanelManager != null)
+            {
+                winPanelManager.ShowWinPanel();
+            }
         }
     }
 

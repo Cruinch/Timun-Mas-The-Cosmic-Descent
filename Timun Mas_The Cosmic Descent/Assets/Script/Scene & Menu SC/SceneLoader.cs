@@ -19,6 +19,16 @@ public class SceneLoader : MonoBehaviour
         exitUI.SetActive(false);
     }
 
+    public void ResetLevel()
+    {
+        // Menghapus PlayerPrefs untuk StarRateLevel1, StarRateLevel2, dan StarRateLevel3
+        PlayerPrefs.DeleteKey("StarRateTestLevel");
+        PlayerPrefs.DeleteKey("StarRateTutorial");
+        PlayerPrefs.DeleteKey("StarRateLevel1");
+        PlayerPrefs.DeleteKey("StarRateLevel2");
+        PlayerPrefs.DeleteKey("StarRateLevel3");
+        PlayerPrefs.Save();
+    }
     public void Reset()
     {
         // Mengulang permainan/scene dengan memuat ulang scene saat ini

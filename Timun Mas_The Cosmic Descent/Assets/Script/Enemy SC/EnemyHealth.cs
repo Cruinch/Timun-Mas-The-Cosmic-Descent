@@ -45,12 +45,6 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
-            if (scoreManager != null)
-            {
-                scoreManager.AddScore(50);
-            }
-
         }
 
         UpdateHealthText();
@@ -80,6 +74,11 @@ public class EnemyHealth : MonoBehaviour
         }
 
         isDead = true;
+        ScoreManager scoreManager = ScoreManager.instance;
+        if (scoreManager != null)
+        {
+            scoreManager.AddScore(100); // Menambahkan 100 poin
+        }
     }
 
     private void UpdateHealthText()

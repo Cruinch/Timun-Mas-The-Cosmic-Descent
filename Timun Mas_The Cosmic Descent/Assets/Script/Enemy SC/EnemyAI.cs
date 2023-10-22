@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         enemyCollider = GetComponent<Collider2D>();
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Cari karakter pemain
+        player = GameObject.FindGameObjectWithTag("Player")?.transform; // Cari karakter pemain
         StartCoroutine(AttackDelay());
     }
 
@@ -81,7 +81,7 @@ public class EnemyAI : MonoBehaviour
         Collider2D playerCollider = Physics2D.OverlapCircle(attackPoint.position, attackRadius, playerLayer);
         if (playerCollider != null)
         {
-            // Dapatkan komponen karakter pemain dan panggil fungsi TakeDamage()
+            // Dapatkan komponen karakter pemain dengan aman
             PlayerHealth playerHealth = playerCollider.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
@@ -93,6 +93,7 @@ public class EnemyAI : MonoBehaviour
         // Menunggu sebelum karakter musuh dapat menyerang lagi
         StartCoroutine(AttackCooldown());
     }
+
 
     private IEnumerator AttackCooldown()
     {

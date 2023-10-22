@@ -16,6 +16,9 @@ public class BossHealth : MonoBehaviour
 
     public GameObject wintxt; // Objek teks "Gameovertxt" dalam hierarki Unity
 
+    public WinPanelManager winPanelManager; // Referensi ke WinPanelManager
+
+
     private void Start()
     {
         wintxt.SetActive(false);
@@ -53,6 +56,10 @@ public class BossHealth : MonoBehaviour
             {
                 scoreManager.AddScore(50);
             }
+            if (winPanelManager != null)
+            {
+                winPanelManager.ShowWinPanel(); // Memanggil fungsi ShowWinPanel pada WinPanelManager
+            }
 
         }
 
@@ -84,6 +91,12 @@ public class BossHealth : MonoBehaviour
 
         isDead = true;
         wintxt.SetActive(true);
+
+        ScoreManager scoreManager = ScoreManager.instance;
+        if (scoreManager != null)
+        {
+            scoreManager.AddScore(1000); // Menambahkan 1000 poin
+        }
     }
 
     private void UpdateHealthText()

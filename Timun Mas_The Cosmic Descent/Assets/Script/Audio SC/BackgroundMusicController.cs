@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +15,19 @@ public class BackgroundMusicController : MonoBehaviour
 
     private void Start()
     {
+        if (volumeSlider != null)
+        {
+            // Tambahkan listener untuk slider
+            volumeSlider.onValueChanged.AddListener(ChangeVolume);
+        }
+
+        // Periksa apakah muteToggle ada dan tidak null
+        if (muteToggle != null)
+        {
+            // Tambahkan listener untuk toggle
+            muteToggle.onValueChanged.AddListener(ToggleMute);
+        }
+
         // Cek apakah ada nilai volume tersimpan di PlayerPrefs
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
@@ -30,12 +45,6 @@ public class BackgroundMusicController : MonoBehaviour
             isMuted = (volumeSlider.value == 0);
             muteToggle.isOn = isMuted;
         }
-
-        // Tambahkan listener untuk slider
-        volumeSlider.onValueChanged.AddListener(ChangeVolume);
-
-        // Tambahkan listener untuk toggle
-        muteToggle.onValueChanged.AddListener(ToggleMute);
 
         backgroundMusic.Play();
     }
