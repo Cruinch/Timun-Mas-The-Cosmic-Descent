@@ -4,6 +4,29 @@
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.4
+
+22/10/2023
+### New Feature :
+- Button
+   - Main Menu
+      - Option Menu
+         - Reset
+- Button Animation
+   - Main Menu
+      - Option Button
+         - Reset
+- Game System
+   - Save Component
+      - Level Rating "PlayerPrefs"
+- Winning Condition
+   - Finish Line
+   - StarRate "PlayerPrefs"
+- Display StarRate
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.3
 
 21/10/2023
