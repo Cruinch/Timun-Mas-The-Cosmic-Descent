@@ -4,6 +4,40 @@
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.3
+
+21/10/2023
+### New Feature :
+- Player Mechanic
+   - Open Menu
+      - Using ESC Button
+### New Update :
+- Basic UI
+   - Game Version UI
+   - Game State UI
+- Button
+   - Pause Menu
+      - Tips Menu
+         - Back
+- Button Animation
+   - Play Button
+      - Level Selection
+         - Test Level
+            - Pause
+            - Respawn
+            - Restart
+### New Fix :
+- Background Music
+   - Main Menu Scene
+      - Basic (Temp)
+- Scene Manager
+   - Tips
+      - Basic (Temp)
+
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.2
 
 19/10/2023
