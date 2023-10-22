@@ -56,14 +56,24 @@ public class BossHealth : MonoBehaviour
             {
                 scoreManager.AddScore(50);
             }
-            if (winPanelManager != null)
-            {
-                winPanelManager.ShowWinPanel(); // Memanggil fungsi ShowWinPanel pada WinPanelManager
-            }
+
+
+            // Memanggil fungsi WinDelay dengan jeda 2 detik
+            Invoke("WinDelay", 2f);
 
         }
 
         UpdateHealthText();
+    }
+
+    private void WinDelay()
+    {
+        Die(); // Memanggil fungsi Die
+
+        if (winPanelManager != null)
+        {
+            winPanelManager.ShowWinPanel(); // Memanggil fungsi ShowWinPanel pada WinPanelManager setelah jeda
+        }
     }
 
     private void Die()
