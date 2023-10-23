@@ -5,9 +5,26 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.6
+
+23/10/2023
+### New Bug Fix :
+- Enemy Mechanic
+   - Enemy can pass through colliders
+   - The enemy can move back and forth very quickly while stacking with the player object
+
+### New Bug :
+- Backrground Music
+   - Test Level
+      - Basic (Temp)
+         - BGM Can't be Stopped in Script
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.5
 
-22/10/2023
+23/10/2023
 ### New Update :
 - Basic UI
    - Player Health UI
