@@ -18,7 +18,7 @@ Version 1.1.5
 - Backrground Music
    - Test Level
       - Basic (Temp)
-         - Can't be Stopped in Script
+         - BGM Can't be Stopped in Script
 
 ## Changelog:
 Alpha Pre-Release
