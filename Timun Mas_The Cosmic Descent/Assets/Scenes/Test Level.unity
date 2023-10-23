@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 15847615}
   - component: {fileID: 15847614}
   - component: {fileID: 15847613}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -247,8 +247,8 @@ Transform:
   m_GameObject: {fileID: 15847612}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -513.27594, y: -294.5183, z: -1.6320347}
-  m_LocalScale: {x: 9.6975, y: 7.217041, z: 1}
+  m_LocalPosition: {x: -513.2925, y: -294.5183, z: -1.6320347}
+  m_LocalScale: {x: 9.664529, y: 7.217041, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 567598690}
@@ -978,9 +978,9 @@ GameObject:
   - component: {fileID: 319658168}
   - component: {fileID: 319658170}
   - component: {fileID: 319658169}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Barrier (1)
-  m_TagString: Ground
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -994,8 +994,8 @@ Transform:
   m_GameObject: {fileID: 319658167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -508.91, y: -298.4528, z: -1.6320347}
-  m_LocalScale: {x: 1.2181897, y: 15.1509, z: 1}
+  m_LocalPosition: {x: -508.91, y: -298.7349, z: -1.6320347}
+  m_LocalScale: {x: 1.2181897, y: 14.587022, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 567598690}
@@ -2923,7 +2923,7 @@ GameObject:
   - component: {fileID: 597920189}
   - component: {fileID: 597920188}
   - component: {fileID: 597920187}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3359,7 +3359,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1455795801}
-  - {fileID: 1831427811}
+  - {fileID: 762132743}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686403782
@@ -3855,6 +3855,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &762132743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+  m_PrefabInstance: {fileID: 1176508375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &807244174
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,7 +4063,7 @@ GameObject:
   - component: {fileID: 825431241}
   - component: {fileID: 825431240}
   - component: {fileID: 825431239}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5734,6 +5739,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171234056}
   m_CullTransparentMesh: 1
+--- !u!1001 &1176508375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 638646309}
+    m_Modifications:
+    - target: {fileID: 3446977169784078293, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_Name
+      value: Bandit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -502.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -300.13815
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6320347
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451070833955473545, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1938644851}
+    - target: {fileID: 8451070833955473545, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 358060327}
+    - target: {fileID: 8684435989557518271, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: enemyaudiosrc
+      value: 
+      objectReference: {fileID: 1535461494}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
 --- !u!1 &1200456316
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,7 +6605,7 @@ GameObject:
   - component: {fileID: 1237264837}
   - component: {fileID: 1237264836}
   - component: {fileID: 1237264835}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6661,7 +6735,7 @@ GameObject:
   - component: {fileID: 1248928947}
   - component: {fileID: 1248928946}
   - component: {fileID: 1248928945}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7264,7 +7338,7 @@ GameObject:
   - component: {fileID: 1380888133}
   - component: {fileID: 1380888135}
   - component: {fileID: 1380888134}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7383,17 +7457,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1441256359 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5197526803559290613, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
-  m_PrefabInstance: {fileID: 2308208817958356521}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e024d4eacbeb94b9f5045f3e68ee91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1455795801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
@@ -8349,9 +8412,9 @@ GameObject:
   - component: {fileID: 1600264992}
   - component: {fileID: 1600264994}
   - component: {fileID: 1600264993}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Barrier (2)
-  m_TagString: Ground
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8728,7 +8791,7 @@ GameObject:
   - component: {fileID: 1685754575}
   - component: {fileID: 1685754574}
   - component: {fileID: 1685754573}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9651,80 +9714,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815216434}
   m_CullTransparentMesh: 1
---- !u!1001 &1831427810
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 638646309}
-    m_Modifications:
-    - target: {fileID: 3446977169784078293, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_Name
-      value: Bandit (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -504.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -300.13815
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.6320347
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8451070833955473545, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: healthText
-      value: 
-      objectReference: {fileID: 1938644851}
-    - target: {fileID: 8451070833955473545, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: healthSlider
-      value: 
-      objectReference: {fileID: 358060327}
-    - target: {fileID: 8684435989557518271, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-      propertyPath: enemyaudiosrc
-      value: 
-      objectReference: {fileID: 1535461494}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
---- !u!4 &1831427811 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
-  m_PrefabInstance: {fileID: 1831427810}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1842636056
 GameObject:
   m_ObjectHideFlags: 0
@@ -10333,7 +10322,7 @@ GameObject:
   - component: {fileID: 1886003110}
   - component: {fileID: 1886003112}
   - component: {fileID: 1886003111}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: platform (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11313,7 +11302,7 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -79.31367, y: 29.382336}
       - {x: -79.26894, y: -1.5994108}
-      - {x: -37.94452, y: -1.5759952}
+      - {x: -37.94452, y: -1.7419071}
       - {x: -37.894863, y: -9.625683}
       - {x: 21.190712, y: -9.801493}
       - {x: 20.950857, y: 29.394316}
@@ -11549,9 +11538,9 @@ GameObject:
   - component: {fileID: 2062971565}
   - component: {fileID: 2062971567}
   - component: {fileID: 2062971566}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Barrier
-  m_TagString: Ground
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12434,29 +12423,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5197526803559290613, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
-      propertyPath: winS
-      value: 
-      objectReference: {fileID: 8300000, guid: 657cd361e3462ce4e9862af2dbaa02f0, type: 3}
-    - target: {fileID: 5197526803559290613, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: audiosrc
       value: 
       objectReference: {fileID: 1880128215}
-    - target: {fileID: 7520176319838220308, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
-      propertyPath: BGM
-      value: 
-      objectReference: {fileID: 1781337454}
-    - target: {fileID: 7520176319838220308, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
-      propertyPath: WinBGM
-      value: 
+    - target: {fileID: 6928312634775815943, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7520176319838220308, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: menuPanel
       value: 
       objectReference: {fileID: 1551828492}
-    - target: {fileID: 7520176319838220308, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
-      propertyPath: SfxManager
-      value: 
-      objectReference: {fileID: 1441256359}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12473,6 +12450,10 @@ PrefabInstance:
     - target: {fileID: 3446977169784078293, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
       propertyPath: m_Name
       value: Bandit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3446977169784078293, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4466761873208854358, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12526,6 +12507,14 @@ PrefabInstance:
       propertyPath: enemyaudiosrc
       value: 
       objectReference: {fileID: 1535461494}
+    - target: {fileID: 9085783735894257788, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085783735894257788, guid: 0aa7561a7006ab541a50e53785de6ed8, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

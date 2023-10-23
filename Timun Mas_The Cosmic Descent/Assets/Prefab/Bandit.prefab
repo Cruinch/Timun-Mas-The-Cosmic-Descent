@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  healthSlider: {fileID: 0}
   healthText: {fileID: 0}
 --- !u!114 &9185030799115805377
 MonoBehaviour:
@@ -242,8 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54cfd56b3d93374a8add282e92c936a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  chaseRadius: 5
+  moveSpeed: 3
+  chaseRadius: 10
   attackPoint: {fileID: 8116539039682017434}
   attackRadius: 3
   playerLayer:

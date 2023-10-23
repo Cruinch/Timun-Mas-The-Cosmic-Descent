@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.140597, y: -3.16, z: -1.6320347}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2895898626953936158}
@@ -116,8 +116,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!61 &4885654202798153099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.036178604, y: 0.6534862}
@@ -196,9 +196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a239277c4d731f942afd1b264bcc0f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 500
   healthText: {fileID: 0}
   wintxt: {fileID: 0}
+  winPanelManager: {fileID: 0}
 --- !u!114 &2971758718817450131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,14 +212,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54cfd56b3d93374a8add282e92c936a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.5
   chaseRadius: 5
   attackPoint: {fileID: 2895898626953936158}
   attackRadius: 3
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 30
+  attackDamage: 25
   attackCooldown: 7
   attackDelay: 5
 --- !u!114 &5397034017922210664

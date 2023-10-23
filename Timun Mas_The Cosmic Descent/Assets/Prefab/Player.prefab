@@ -185,7 +185,7 @@ MonoBehaviour:
     m_Bits: 8
   attackDamage: 40
   isJumping: 0
-  SfxManager: {fileID: 0}
+  SfxManager: {fileID: 5197526803559290613}
   menuPanel: {fileID: 0}
 --- !u!95 &446906507459782084
 Animator:
@@ -225,6 +225,7 @@ MonoBehaviour:
   currentLives: 0
   restartDelay: 3
   healthText: {fileID: 0}
+  healthSlider: {fileID: 0}
   livesText: {fileID: 0}
   gameOverText: {fileID: 0}
 --- !u!114 &5197526803559290613
@@ -249,6 +250,7 @@ MonoBehaviour:
   itemS: {fileID: 8300000, guid: 3af777be8dfe53e48ba4742635bacfae, type: 3}
   healS: {fileID: 8300000, guid: 7855adbf2820e914ba1e47dcf0a741bd, type: 3}
   cpointS: {fileID: 8300000, guid: a68e9134d77e7ef4e9b9769645fbcba8, type: 3}
+  winS: {fileID: 8300000, guid: 657cd361e3462ce4e9862af2dbaa02f0, type: 3}
 --- !u!1 &6807206108924207264
 GameObject:
   m_ObjectHideFlags: 0

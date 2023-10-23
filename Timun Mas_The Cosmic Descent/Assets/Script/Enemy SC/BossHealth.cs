@@ -12,6 +12,8 @@ public class BossHealth : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
     private EnemyAI enemyAI;
+
+    public Slider healthSlider; // Referensi ke komponen Slider untuk menampilkan nyawa
     public Text healthText;
 
     public GameObject wintxt; // Objek teks "Gameovertxt" dalam hierarki Unity
@@ -28,6 +30,7 @@ public class BossHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemyAI = GetComponent<EnemyAI>();
 
+        UpdateHealthSlider();
         UpdateHealthText();
     }
 
@@ -51,25 +54,17 @@ public class BossHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
-            if (scoreManager != null)
-            {
-                scoreManager.AddScore(50);
-            }
-
-
             // Memanggil fungsi WinDelay dengan jeda 2 detik
             Invoke("WinDelay", 2f);
 
         }
 
+        UpdateHealthSlider();
         UpdateHealthText();
     }
 
     private void WinDelay()
     {
-        Die(); // Memanggil fungsi Die
-
         if (winPanelManager != null)
         {
             winPanelManager.ShowWinPanel(); // Memanggil fungsi ShowWinPanel pada WinPanelManager setelah jeda
@@ -113,7 +108,16 @@ public class BossHealth : MonoBehaviour
     {
         if (healthText != null)
         {
-            healthText.text = "Health: " + currentHealth.ToString();
+            healthText.text = currentHealth.ToString();
+        }
+    }
+
+    private void UpdateHealthSlider()
+    {
+        // Perbarui nilai Slider dengan nilai nyawa saat ini
+        if (healthSlider != null)
+        {
+            healthSlider.value = (float)currentHealth / maxHealth;
         }
     }
 }

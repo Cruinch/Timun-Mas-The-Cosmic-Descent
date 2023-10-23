@@ -34,7 +34,7 @@ public class WinPanelManager : MonoBehaviour
             winScoreText.text = "Score: " + score.ToString();
         }
 
-        int starRate = CalculateStarRate(score);
+        int starRate = CalculateStarRate(score, SceneManager.GetActiveScene().name);
 
         string currentSceneName = SceneManager.GetActiveScene().name;
 
@@ -75,20 +75,84 @@ public class WinPanelManager : MonoBehaviour
         }
     }
 
-    private int CalculateStarRate(int score)
+    private int CalculateStarRate(int score, string levelName)
     {
-        if (score >= 300)
+        if (levelName == "Test Level")
         {
-            return 3;
+            if (score >= 500)
+            {
+                return 3;
+            }
+            else if (score >= 300)
+            {
+                return 2;
+            }
+            else if (score >= 100)
+            {
+                return 1;
+            }
         }
-        else if (score >= 200)
+        else if (levelName == "Tutorial")
         {
-            return 2;
+            if (score >= 400)
+            {
+                return 3;
+            }
+            else if (score >= 250)
+            {
+                return 2;
+            }
+            else if (score >= 100)
+            {
+                return 1;
+            }
         }
-        else if (score >= 100)
+        else if (levelName == "Level1")
         {
-            return 1;
+            if (score >= 600)
+            {
+                return 3;
+            }
+            else if (score >= 400)
+            {
+                return 2;
+            }
+            else if (score >= 200)
+            {
+                return 1;
+            }
+        }
+        else if (levelName == "Level2")
+        {
+            if (score >= 700)
+            {
+                return 3;
+            }
+            else if (score >= 500)
+            {
+                return 2;
+            }
+            else if (score >= 250)
+            {
+                return 1;
+            }
+        }
+        else if (levelName == "Boss Level")
+        {
+            if (score >= 1000)
+            {
+                return 3;
+            }
+            else if (score >= 800)
+            {
+                return 2;
+            }
+            else if (score >= 400)
+            {
+                return 1;
+            }
         }
         return 0;
     }
+
 }

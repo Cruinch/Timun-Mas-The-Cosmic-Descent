@@ -212,5 +212,4 @@ public class PlayerControl : MonoBehaviour
             SfxManager.WinSound();
         }
     }
-
 }

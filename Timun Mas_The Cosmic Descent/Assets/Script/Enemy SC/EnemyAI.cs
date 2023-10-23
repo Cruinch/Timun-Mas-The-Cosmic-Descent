@@ -112,4 +112,24 @@ public class EnemyAI : MonoBehaviour
         // Setelah jeda, karakter musuh dapat mulai menyerang
         Attack();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            moveSpeed = 0f;
+        }
+        if (collision.gameObject.CompareTag("Barrier"))
+        {
+            moveSpeed = 0f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            moveSpeed = 3f;
+        }
+    }
 }
