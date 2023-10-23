@@ -5,6 +5,24 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.5
+
+22/10/2023
+### New Update :
+- Basic UI
+   - Player Health UI
+   - Enemy Health UI
+- Sound Effect
+   - Win Sfx
+### New Bug :
+- Backrground Music
+   - Test Level
+      - Basic (Temp)
+         - BGM Can't be Stopped in Script
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.4
 
 22/10/2023
