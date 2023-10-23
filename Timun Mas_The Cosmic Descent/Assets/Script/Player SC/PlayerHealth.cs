@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,7 +12,9 @@ public class PlayerHealth : MonoBehaviour
     public int currentLives;
     private Animator animator; // Animator pemain
     public float restartDelay = 2f; // Waktu jeda sebelum mengulang permainan
+    
     public Text healthText; // Referensi ke komponen Text yang akan menampilkan nyawa
+    public Slider healthSlider; // Referensi ke komponen Slider untuk menampilkan nyawa
     public Text livesText;
 
     private Vector2 checkpoint;
@@ -34,7 +35,9 @@ public class PlayerHealth : MonoBehaviour
 
         currentLives = lives;
         currentHealth = maxHealth;
+
         animator = GetComponent<Animator>();
+        UpdateHealthSlider();
         UpdateHealthText();
         
         sfxManager = GetComponent<SfxManager>();
@@ -69,12 +72,15 @@ public class PlayerHealth : MonoBehaviour
 
         // Perbarui teks nyawa setiap kali nyawa berubah
         UpdateHealthText();
+        UpdateHealthSlider();
     }
 
     public void Heal()
     {
         currentHealth += 20;
-        UpdateHealthText(); 
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
+        UpdateHealthText();
+        UpdateHealthSlider();
     }
 
     public void Die()
@@ -82,6 +88,7 @@ public class PlayerHealth : MonoBehaviour
         currentLives -= 1;
         animator.SetTrigger("Die");
         UpdateLivesText();
+        UpdateHealthSlider();
         playerControlScript = GetComponent<PlayerControl>();
         playerControlScript.speed = 0;
         if (currentLives <= 0)
@@ -120,12 +127,23 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene(currentScene.buildIndex);
     }
 
+    private void UpdateHealthSlider()
+    {
+        // Perbarui nilai Slider dengan nilai nyawa saat ini
+        if (healthSlider != null)
+        {
+            healthSlider.value = (float)currentHealth / maxHealth;
+        }
+    }
+
+
     private void UpdateHealthText()
     {
         // Perbarui teks nyawa dengan nilai nyawa saat ini
         if (healthText != null)
         {
-            healthText.text = "Health: " +  currentHealth.ToString();
+            //healthText.text = "Health: " +  currentHealth.ToString();
+            healthText.text = currentHealth.ToString();
         }
     }
 
@@ -157,5 +175,6 @@ public class PlayerHealth : MonoBehaviour
             playerControlScript.speed = 5;
         }
         UpdateHealthText();
+        UpdateHealthSlider();
     }
 }

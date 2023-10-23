@@ -12,6 +12,8 @@ public class EnemyHealth : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
     private EnemyAI enemyAI;
+
+    public Slider healthSlider; // Referensi ke komponen Slider untuk menampilkan nyawa
     public Text healthText;
 
     private void Start()
@@ -22,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemyAI = GetComponent<EnemyAI>();
 
+        UpdateHealthSlider();
         UpdateHealthText();
     }
 
@@ -47,6 +50,7 @@ public class EnemyHealth : MonoBehaviour
             Die();
         }
 
+        UpdateHealthSlider();
         UpdateHealthText();
     }
 
@@ -85,7 +89,17 @@ public class EnemyHealth : MonoBehaviour
     {
         if (healthText != null)
         {
-            healthText.text = "Health: " + currentHealth.ToString();
+            //healthText.text = "Health: " + currentHealth.ToString();
+            healthText.text = currentHealth.ToString();
+        }
+    }
+
+    private void UpdateHealthSlider()
+    {
+        // Perbarui nilai Slider dengan nilai nyawa saat ini
+        if (healthSlider != null)
+        {
+            healthSlider.value = (float)currentHealth / maxHealth;
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SfxManager : MonoBehaviour
 {
     public AudioSource audiosrc;
-    public AudioClip runS, jumpS, attackS, hurtS, dieS, gameOverS, itemS, healS, cpointS;
+    public AudioClip runS, jumpS, attackS, hurtS, dieS, gameOverS, itemS, healS, cpointS, winS;
 
     public void RunSound()
     {
@@ -54,6 +54,12 @@ public class SfxManager : MonoBehaviour
     public void CPointSound()
     {
         audiosrc.clip = cpointS;
+        audiosrc.Play();
+    }
+
+    public void WinSound()
+    {
+        audiosrc.clip = winS;
         audiosrc.Play();
     }
 

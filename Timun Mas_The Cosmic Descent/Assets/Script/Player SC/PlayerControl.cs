@@ -209,6 +209,7 @@ public class PlayerControl : MonoBehaviour
             {
                 winPanelManager.ShowWinPanel();
             }
+            SfxManager.WinSound();
         }
     }
 
