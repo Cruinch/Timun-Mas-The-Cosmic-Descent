@@ -45,18 +45,25 @@ public class WinPanelManager : MonoBehaviour
         else if (currentSceneName == "Tutorial")
         {
             PlayerPrefs.SetInt("StarRateTutorial", starRate);
+            PlayerPrefs.SetInt("LevelTutorialCompleted", 1);
+
         }
         else if (currentSceneName == "Level1")
         {
             PlayerPrefs.SetInt("StarRateLevel1", starRate);
+            PlayerPrefs.SetInt("Level1Completed", 1);
+
         }
         else if (currentSceneName == "Level2")
         {
             PlayerPrefs.SetInt("StarRateLevel2", starRate);
+            PlayerPrefs.SetInt("Level2Completed", 1);
+
         }
         else if (currentSceneName == "Boss Level")
         {
             PlayerPrefs.SetInt("StarRateLevel3", starRate);
+            PlayerPrefs.SetInt("LevelBossCompleted", 1);
         }
 
         PlayerPrefs.Save();

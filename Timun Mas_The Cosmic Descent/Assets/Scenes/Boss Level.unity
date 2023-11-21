@@ -231,6 +231,18 @@ PrefabInstance:
       value: Player (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4296863280172358907, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296863280172358907, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296863280172358907, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296863280172358907, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.24
       objectReference: {fileID: 0}
@@ -269,6 +281,10 @@ PrefabInstance:
     - target: {fileID: 4296863280172358907, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296863280172358907, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5197526803559290613, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: dieS
@@ -310,6 +326,10 @@ PrefabInstance:
       propertyPath: gameOverS
       value: 
       objectReference: {fileID: 8300000, guid: 0fdebd15930a4da438dae1c93669df2a, type: 3}
+    - target: {fileID: 7238200174498598182, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 1.0083122
+      objectReference: {fileID: 0}
     - target: {fileID: 7520176319838220308, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: menuPanel
       value: 

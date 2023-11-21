@@ -18,6 +18,12 @@ public class PlayerControl : MonoBehaviour
     public bool isJumping = false; // Apakah karakter sedang melompat
     private bool isAttacking = false; // Apakah karakter sedang menyerang
 
+    private bool canDash = true;
+    private bool isDashing;
+    public float dashingPower = 24f;
+    public float dashingTime = 0.2f;
+    public float dashingCooldown = 1f;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool isFacingRight = true; // Apakah karakter menghadap kanan
@@ -26,15 +32,22 @@ public class PlayerControl : MonoBehaviour
 
     public GameObject menuPanel;
 
+    [SerializeField] private TrailRenderer tr;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         SfxManager = GetComponent<SfxManager>();
+        tr.emitting = false;
     }
 
     private void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
         // Mengatur animasi berdasarkan kecepatan karakter
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         animator.SetBool("IsJump", isJumping);
@@ -64,18 +77,29 @@ public class PlayerControl : MonoBehaviour
             Attack();
         }
 
-        // Menyerang jika tombol kiri mouse ditekan
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menuPanel.SetActive(true);
             Time.timeScale = 0f;
         }
 
+        if (Input.GetKeyDown(KeyCode.L) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
+
+
 
     }
 
     private void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         // Menggerakkan karakter ke kiri atau kanan
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(horizontalInput * speed, rb.velocity.y);
@@ -211,5 +235,21 @@ public class PlayerControl : MonoBehaviour
             }
             SfxManager.WinSound();
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }

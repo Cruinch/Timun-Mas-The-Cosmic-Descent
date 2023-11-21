@@ -306,8 +306,8 @@ RectTransform:
   - {fileID: 1880138933}
   - {fileID: 1952787904}
   - {fileID: 1018663511}
-  - {fileID: 1150766692}
   - {fileID: 927238419}
+  - {fileID: 1150766692}
   - {fileID: 1246278384}
   - {fileID: 968796847}
   - {fileID: 922342444}
@@ -614,7 +614,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308911736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1018629938}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: GoScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Tutorial
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308911736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,6 +2270,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872902548}
   m_CullTransparentMesh: 1
+--- !u!1 &912799978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912799980}
+  - component: {fileID: 912799979}
+  m_Layer: 0
+  m_Name: ButtonLevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &912799979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912799978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9a10bb9c37e4e4a99d44ff34a0d253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Button: {fileID: 1517897606}
+  level2Button: {fileID: 1196930781}
+  levelBossButton: {fileID: 1521667051}
+--- !u!4 &912799980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912799978}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &922342443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +3120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1196930782}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1018629938}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: GoScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1196930782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3545,7 +3616,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1517897607}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1018629938}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: GoScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1517897607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4000,8 +4083,8 @@ MonoBehaviour:
   - {fileID: 1952787906}
   - {fileID: 1018663513}
   starImagesLevel1:
-  - {fileID: 1150766694}
   - {fileID: 927238421}
+  - {fileID: 1150766694}
   - {fileID: 1246278382}
   starImagesLevel2:
   - {fileID: 968796849}
@@ -5552,3 +5635,4 @@ SceneRoots:
   - {fileID: 848740944}
   - {fileID: 1245757891}
   - {fileID: 1558574863}
+  - {fileID: 912799980}
