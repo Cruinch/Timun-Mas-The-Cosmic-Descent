@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SceneLoader : MonoBehaviour
 {
     public GameObject optionMenuUI;
+    public GameObject audioUI;
     public GameObject creditUI;
     public GameObject tipsUI;
     public GameObject exitUI;
@@ -14,6 +15,7 @@ public class SceneLoader : MonoBehaviour
     public void Start()
     {
         optionMenuUI.SetActive(false);
+        audioUI.SetActive(false);
         creditUI.SetActive(false);
         tipsUI.SetActive(false);
         exitUI.SetActive(false);
@@ -62,6 +64,16 @@ public class SceneLoader : MonoBehaviour
     public void offOption()
     {
         optionMenuUI.SetActive(false);
+    }
+
+    public void onAudio()
+    {
+        audioUI.SetActive(true);
+    }
+
+    public void offAudio()
+    {
+        audioUI.SetActive(false);
     }
 
     public void onCredit()
