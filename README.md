@@ -5,6 +5,20 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.8
+
+30/11/2023
+### New Fix :
+- Main Menu
+   - UI
+- Background Music
+   - Test Level
+     - Basic Temp
+        - BGM Can't be Stopped in Script
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.7
 
 23/10/2023
