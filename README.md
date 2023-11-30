@@ -5,6 +5,30 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.7
+
+23/10/2023
+### New Features :
+- Button Mechanic
+   - Tutorial
+      - Interact System
+   - Level 1
+      - Interact System
+   - Level 2
+      - Interact System
+   - Level 3
+      - Interact System
+
+### New Fix :
+- Player Mechanic
+   - Action
+      - Dash
+- Player Animtion
+   - Attack
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.6
 
 23/10/2023
