@@ -5,6 +5,38 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.9
+
+06/12/2023
+### New Features :
+- Game System
+   - Dialogue Box
+      - Animation Open
+      - Animation Close
+- Button
+   - Level Selection
+      - Tutorial Level
+         - Pause Menu
+      - Level 1
+         - Pause Menu
+      - Level 2
+         - Pause Menu
+      - Level 3
+         - Pause Menu
+- Button Animation 
+   - Level Selection
+      - Tutorial Level
+         - Pause Menu
+      - Level 1
+         - Pause Menu
+      - Level 2
+         - Pause Menu
+      - Level 3
+         - Pause Menu
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.8
 
 30/11/2023
