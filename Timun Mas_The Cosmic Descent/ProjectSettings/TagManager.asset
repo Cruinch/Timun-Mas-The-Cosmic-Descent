@@ -23,7 +23,7 @@ TagManager:
   - playerLayers
   - Environment
   - GroundLayer
-  - 
+  - Background
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: ui
     uniqueID: 1430051079
+    locked: 0
+  - name: Background
+    uniqueID: 1576516745
     locked: 0
