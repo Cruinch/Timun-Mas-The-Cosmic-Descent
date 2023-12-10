@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 81.759, y: 64.137}
+  m_AnchoredPosition: {x: 79.87688, y: 41.000122}
   m_SizeDelta: {x: 59.9458, y: 56.3077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36085716
@@ -3268,7 +3268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72.117874, y: 64.13688}
+  m_AnchoredPosition: {x: -74, y: 41}
   m_SizeDelta: {x: 59.9458, y: 56.3077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &887378740
@@ -3546,7 +3546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.655098, y: 64.13688}
+  m_AnchoredPosition: {x: 1.7729722, y: 41}
   m_SizeDelta: {x: 59.9458, y: 56.3077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &994385614
@@ -5024,7 +5024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 163}
+  m_AnchoredPosition: {x: -1, y: 113}
   m_SizeDelta: {x: 304.6286, y: 69.0234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379622047
@@ -5049,15 +5049,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Level Completed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 57b5fc535e3dd404188398226a224d4b, type: 2}
+  m_sharedMaterial: {fileID: 9071967109635238347, guid: 57b5fc535e3dd404188398226a224d4b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5471,7 +5471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1539676679
 RectTransform:
   m_ObjectHideFlags: 0
