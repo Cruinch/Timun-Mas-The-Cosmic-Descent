@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject optionMenuUI;
+    public GameObject audioUI;
     public GameObject tipsMenuUI;
 
     private bool isPaused;
@@ -17,6 +18,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
         optionMenuUI.SetActive(false);
+        audioUI.SetActive(false);
         isPaused = false; // Inisialisasi isPaused
     }
     public void Pause()
@@ -69,6 +71,16 @@ public class PauseMenu : MonoBehaviour
     {
         tipsMenuUI.SetActive(false);
         pauseMenuUI.SetActive(true);
+    }
+
+    public void onAudio()
+    {
+        audioUI.SetActive(true);
+    }
+
+    public void offAudio()
+    {
+        audioUI.SetActive(false);
     }
 
     public void MainMenu()

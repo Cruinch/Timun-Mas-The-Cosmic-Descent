@@ -67,17 +67,17 @@ public class LevelManager : MonoBehaviour
 
     public void Tutorial()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void Level1()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Level1");
     }
 
     public void Level2()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Level2");
     }
 
     public void Level3()
