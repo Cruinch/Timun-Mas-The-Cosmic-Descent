@@ -11,7 +11,7 @@ public class SceneLoader : MonoBehaviour
     public GameObject creditUI;
     public GameObject tipsUI;
     public GameObject exitUI;
-    public GameObject audioUI;
+    /*public GameObject audioUI;*/
 
     public void Start()
     {
@@ -68,7 +68,7 @@ public class SceneLoader : MonoBehaviour
         optionMenuUI.SetActive(false);
     }
 
-    public void onAudio()
+    /*public void onAudio()
     {
         audioUI.SetActive(true);
     }
@@ -76,7 +76,7 @@ public class SceneLoader : MonoBehaviour
     public void offAudio()
     {
         audioUI.SetActive(false);
-    }
+    }*/
 
     public void onCredit()
     {
