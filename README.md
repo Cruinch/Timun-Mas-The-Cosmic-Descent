@@ -5,6 +5,32 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Alpha Pre-Release
 
+Version 1.1.10
+
+13/12/2023
+### New Info :
+- UI Branch Merge to Main Branch
+
+### New User Interface :
+- Scene Main Menu
+- Scene Level Selection
+- Scene Tutorial
+- Scene Level 1
+- Scene Level 2
+- Scene Level 3
+- Setting Panel
+- Player UI
+- Enemy UI
+
+### New Fix :
+- Game System
+- Setting System
+- Button System
+- Score System
+
+## Changelog:
+Alpha Pre-Release
+
 Version 1.1.9
 
 06/12/2023
