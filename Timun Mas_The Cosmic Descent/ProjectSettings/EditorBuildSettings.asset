@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
-    guid: a75f99b7262c0d24db7594ec566ba566
+    guid: e54b0b8d87322d042960ecc74120ba87
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 166400a5bd0616a4bb7d3280fe4af4e4
@@ -26,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss Level.unity
     guid: 75293b28794c21e458b283a3e3ed6e48
-  - enabled: 1
-    path: Assets/Scenes/DialogueScene.unity
-    guid: 397bdd63c5b3099479245ce007d7086d
   m_configObjects: {}

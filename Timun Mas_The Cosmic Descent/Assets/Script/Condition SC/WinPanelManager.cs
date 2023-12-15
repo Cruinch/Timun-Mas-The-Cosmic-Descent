@@ -105,7 +105,7 @@ public class WinPanelManager : MonoBehaviour
             {
                 return 3;
             }
-            else if (score >= 250)
+            else if (score >= 200)
             {
                 return 2;
             }
@@ -115,6 +115,21 @@ public class WinPanelManager : MonoBehaviour
             }
         }
         else if (levelName == "Level1")
+        {
+            if (score >= 500)
+            {
+                return 3;
+            }
+            else if (score >= 300)
+            {
+                return 2;
+            }
+            else if (score >= 100)
+            {
+                return 1;
+            }
+        }
+        else if (levelName == "Level2")
         {
             if (score >= 600)
             {
@@ -129,32 +144,17 @@ public class WinPanelManager : MonoBehaviour
                 return 1;
             }
         }
-        else if (levelName == "Level2")
-        {
-            if (score >= 700)
-            {
-                return 3;
-            }
-            else if (score >= 500)
-            {
-                return 2;
-            }
-            else if (score >= 250)
-            {
-                return 1;
-            }
-        }
         else if (levelName == "Boss Level")
         {
             if (score >= 1000)
             {
                 return 3;
             }
-            else if (score >= 800)
+            else if (score >= 600)
             {
                 return 2;
             }
-            else if (score >= 400)
+            else if (score >= 200)
             {
                 return 1;
             }
