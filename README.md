@@ -3,6 +3,19 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 
 ## Changelog:
+Beta Testing
+
+Version 1.2.0
+
+15/12/2023
+### New Info :
+- Combining multiple project files into one file on Github.
+- Checking and optimizing some code after merging project files.
+- Inserting and adjusting UI elements in various scenes.
+- Incorporating and fine-tuning level designs for each level in the game.
+- Adding and adjusting assets and animations for various characters.
+
+## Changelog:
 Alpha Pre-Release
 
 Version 1.1.10
