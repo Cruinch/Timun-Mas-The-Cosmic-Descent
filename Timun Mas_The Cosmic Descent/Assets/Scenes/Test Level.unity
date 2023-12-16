@@ -10651,6 +10651,10 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1766954517}
+    - target: {fileID: 4119881232587985600, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2f877da14458534eab7594a9afe9ff0, type: 3}
     - target: {fileID: 4176829209125829235, guid: 377a9adab2defcb48a7609c9d7a5ed83, type: 3}
       propertyPath: m_Name
       value: Player
