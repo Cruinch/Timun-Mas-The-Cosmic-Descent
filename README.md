@@ -5,6 +5,18 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Beta Testing
 
+Version 1.2.2
+
+17/12/2023
+### New Fix :
+- Fix Character Asset & Animation
+- Fix Level Button Interaction System
+- Fix Win Score System
+- Fix Game Title
+
+## Changelog:
+Beta Testing
+
 Version 1.2.1
 
 17/12/2023
