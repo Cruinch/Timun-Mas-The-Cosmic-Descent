@@ -5,6 +5,15 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Beta Testing
 
+Version 1.2.1
+
+17/12/2023
+### New Add :
+- Adding New Asset and Animation for Main Charachter
+
+## Changelog:
+Beta Testing
+
 Version 1.2.0
 
 15/12/2023
