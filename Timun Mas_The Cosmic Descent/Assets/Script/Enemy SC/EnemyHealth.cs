@@ -78,6 +78,8 @@ public class EnemyHealth : MonoBehaviour
         }
 
         isDead = true;
+        animator.SetTrigger("Hide");
+        Destroy(gameObject);
         ScoreManager scoreManager = ScoreManager.instance;
         if (scoreManager != null)
         {

@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mini_Attack
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 014bf1d3439015d468f3aae1a0a78c92, type: 3}
+    - time: 0.15
+      value: {fileID: 21300000, guid: 71dab332052592a4cbafb88b361ed6fe, type: 3}
+    - time: 0.28333333
+      value: {fileID: 21300000, guid: 3a43363c9fd4a9044a494551c71c060d, type: 3}
+    - time: 0.43333334
+      value: {fileID: 21300000, guid: 21ee6f2d21be80847a2b218b3e9f156c, type: 3}
+    - time: 0.56666666
+      value: {fileID: 21300000, guid: a6fe987b21a770941ab68a49285b3e81, type: 3}
+    - time: 0.71666664
+      value: {fileID: 21300000, guid: 9910772b36fc59a448fd7f76e738cc05, type: 3}
+    - time: 0.85
+      value: {fileID: 21300000, guid: 5777a4057dfac354c93c131c906091ab, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: b560a50c03a5d1447a75b550f85c997f, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: 014bf1d3439015d468f3aae1a0a78c92, type: 3}
+    - {fileID: 21300000, guid: 71dab332052592a4cbafb88b361ed6fe, type: 3}
+    - {fileID: 21300000, guid: 3a43363c9fd4a9044a494551c71c060d, type: 3}
+    - {fileID: 21300000, guid: 21ee6f2d21be80847a2b218b3e9f156c, type: 3}
+    - {fileID: 21300000, guid: a6fe987b21a770941ab68a49285b3e81, type: 3}
+    - {fileID: 21300000, guid: 9910772b36fc59a448fd7f76e738cc05, type: 3}
+    - {fileID: 21300000, guid: 5777a4057dfac354c93c131c906091ab, type: 3}
+    - {fileID: 21300000, guid: b560a50c03a5d1447a75b550f85c997f, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 1.0166667
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events:
+  - time: 0.71666664
+    functionName: AttackEnemySound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

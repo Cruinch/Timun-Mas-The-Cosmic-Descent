@@ -2481,6 +2481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1018629939}
   - component: {fileID: 1018629938}
+  - component: {fileID: 1018629940}
   m_Layer: 0
   m_Name: SceneLevelManager
   m_TagString: Untagged
@@ -2517,6 +2518,21 @@ Transform:
   - {fileID: 1755081740}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1018629940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018629937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9a10bb9c37e4e4a99d44ff34a0d253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Button: {fileID: 1517897606}
+  level2Button: {fileID: 1196930781}
+  levelBossButton: {fileID: 1521667051}
 --- !u!1 &1018663510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2787,7 @@ GameObject:
   - component: {fileID: 1196930781}
   - component: {fileID: 1196930784}
   m_Layer: 5
-  m_Name: Level2Btn
+  m_Name: level2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3057,7 +3073,7 @@ GameObject:
   - component: {fileID: 1517897606}
   - component: {fileID: 1517897609}
   m_Layer: 5
-  m_Name: Level1Btn
+  m_Name: level1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3235,7 +3251,7 @@ GameObject:
   - component: {fileID: 1521667051}
   - component: {fileID: 1521667054}
   m_Layer: 5
-  m_Name: Level3Btn
+  m_Name: levelBossButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

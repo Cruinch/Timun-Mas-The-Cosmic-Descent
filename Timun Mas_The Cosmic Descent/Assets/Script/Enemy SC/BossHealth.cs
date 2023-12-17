@@ -76,6 +76,7 @@ public class BossHealth : MonoBehaviour
         if (animator != null)
         {
             animator.SetTrigger("Die");
+            animator.SetTrigger("Hide");
         }
 
         if (enemyCollider != null)
