@@ -28,8 +28,11 @@ public class SceneLoader : MonoBehaviour
         // Menghapus PlayerPrefs untuk StarRateLevel1, StarRateLevel2, dan StarRateLevel3
         PlayerPrefs.DeleteKey("StarRateTestLevel");
         PlayerPrefs.DeleteKey("StarRateTutorial");
+        PlayerPrefs.DeleteKey("LevelTutorialCompleted");
         PlayerPrefs.DeleteKey("StarRateLevel1");
+        PlayerPrefs.DeleteKey("Level1Completed");
         PlayerPrefs.DeleteKey("StarRateLevel2");
+        PlayerPrefs.DeleteKey("Level2Completed");
         PlayerPrefs.DeleteKey("StarRateLevel3");
         PlayerPrefs.Save();
     }
