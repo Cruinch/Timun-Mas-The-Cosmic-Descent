@@ -90,9 +90,10 @@ public class PlayerHealth : MonoBehaviour
         UpdateLivesText();
         UpdateHealthSlider();
         playerControlScript = GetComponent<PlayerControl>();
-        playerControlScript.speed = 0;
+        //playerControlScript.speed = 0;
         if (currentLives <= 0)
         {
+            animator.SetTrigger("Die");
             GameOver();
         }
         else
@@ -115,9 +116,10 @@ public class PlayerHealth : MonoBehaviour
     public void Restart()
     {
         // Mengulang permainan/scene
-        RestartGame();
         playerControlScript = GetComponent<PlayerControl>();
         playerControlScript.enabled = true;
+        RestartGame();
+
     }
 
     public void RestartGame()

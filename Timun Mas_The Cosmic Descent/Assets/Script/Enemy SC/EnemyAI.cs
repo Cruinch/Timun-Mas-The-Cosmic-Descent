@@ -14,6 +14,7 @@ public class EnemyAI : MonoBehaviour
     public float attackCooldown = 2f; // Jeda antara serangan
     public float attackDelay = 1f; // Jeda sebelum menyerang
 
+    private Rigidbody2D rb;
     private Transform player; // Referensi ke karakter pemain
     private Animator animator;
     private Collider2D enemyCollider;
@@ -21,6 +22,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemyCollider = GetComponent<Collider2D>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform; // Cari karakter pemain

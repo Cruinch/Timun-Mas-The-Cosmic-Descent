@@ -180,7 +180,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!61 &3874565663356710481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,10 +210,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7601497, y: -1.280271}
+  m_Offset: {x: -0.83816934, y: -1.5477722}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -224,7 +224,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.9871716, y: 5.4971123}
+  m_Size: {x: 5.181537, y: 4.96211}
   m_EdgeRadius: 0
 --- !u!95 &7079159596207479560
 Animator:
