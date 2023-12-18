@@ -5,6 +5,30 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## Changelog:
 Beta Testing
 
+Version 1.2.3
+
+18/12/2023
+### Info:
+- Compress The Max Size Character Asset 2048 > 1024
+- Compress The Raw Game Size From 562MB to 301MB
+- Compress The Rar Game Size From 51,2MB to 42MB
+
+### Add:
+- The Credit Members & Roles at Credits Panel
+
+### Fix:
+- Enemy Rigidbody
+- Player & Enemy Collider
+- Player Control After Respawn
+- Player Jump Animation
+- Player Die Animation
+- Rearrange Main Menu Button in Main Menu Scene
+- Rescale Timun Mas Backgroun in Main Menu Scene
+
+
+## Changelog:
+Beta Testing
+
 Version 1.2.2
 
 17/12/2023
