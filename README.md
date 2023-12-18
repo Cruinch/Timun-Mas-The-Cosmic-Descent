@@ -3,7 +3,30 @@ This is a game project for our final assignment with my team, B Eleven Studios.
 ## [Aspect List In Game](https://app.milanote.com/1QOHtK16KajU7f/timun-mas--the-cosmic-descent)
 
 ## Changelog:
-Beta Testing
+Release Version
+
+Version 1.3.0
+
+18/12/2023
+### Info:
+- Compress The Max Size All Asset 2048 > 1024
+- Compress The Raw Game Size From 301MB to 293MB
+- Compress The Rar Game Size From 42MB to 43MB
+
+### Add:
+- Prolog Cutscene at Level Tutorial Scene
+- Boss Cutscene at Boss Level Scene
+
+### Fix:
+- Checkpoint System
+- Big Trap Collider
+- Item Timun Collider
+- Ground Tiles Collider
+- All Enemy Collider
+- Rearrange Some Ground Tiles in Level 2 Scene 
+
+## Changelog:
+Beta Testing 
 
 Version 1.2.3
 
@@ -24,7 +47,6 @@ Version 1.2.3
 - Player Die Animation
 - Rearrange Main Menu Button in Main Menu Scene
 - Rescale Timun Mas Backgroun in Main Menu Scene
-
 
 ## Changelog:
 Beta Testing
